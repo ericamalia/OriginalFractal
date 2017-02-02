@@ -5,6 +5,7 @@ public void setup(){
 }
 int bob =80;
 public void draw(){
+	strokeWeight(.3);
 	for (int i =0; i< 850; i+=50){
 		for(int j=0; j<850; j+= 50){
 			fill(35, 59, 71);
@@ -13,6 +14,7 @@ public void draw(){
 	}
 	
 	fill(117, 160, 92);
+
 	int r = (int)(Math.random()*100);
 	int g = (int)(Math.random()*150);
 	int b = (int)(Math.random()*150);
@@ -22,6 +24,9 @@ public void draw(){
 
 	fill(59, 115, 26);
 	fract(400,400,bob/2);
+
+	fill(69, 105, 48);
+	fract(400,400,bob/4);
 
 	if (bob < 250){
 		bob+=2;
